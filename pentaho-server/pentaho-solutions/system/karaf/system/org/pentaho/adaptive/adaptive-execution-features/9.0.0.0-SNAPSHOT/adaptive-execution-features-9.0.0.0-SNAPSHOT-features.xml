@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.1" name="adaptive-execution-features">
+    <feature name="pdi-spark" version="1.0">
+        <feature>pdi-spark-base</feature>
+    </feature>
+    <feature name="pdi-spark-executor" version="1.0">
+        <feature>pdi-spark-base</feature>
+    </feature>
+    <feature name="pdi-spark-base" version="1.0">
+        <config name="pentaho.pdi.spark" append="false">
+      configuredEngine=spark
+    </config>
+        <bundle>mvn:pentaho/pentaho-blueprint-collection-utils/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-metastore-locator-api/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-api-jaas/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-api-initializer/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-api-cluster-service-locator/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:commons-beanutils/commons-beanutils/1.9.3</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-api-cluster/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-impl-cluster/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-kettle-plugins-kafka/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.pentaho.di.plugins/pentaho-streaming-mqtt-plugin/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-kettle-plugins-formats/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-kettle-plugins-formats-meta/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-api-format/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pentaho-big-data-api-runtimeTest/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.pentaho.adaptive/pdi-spark-engine-operations/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:commons-codec/commons-codec/1.10</bundle>
+        <bundle>mvn:pentaho/pentaho-object-tunnel/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.9.5</bundle>
+        <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.5</bundle>
+        <bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.9.5</bundle>
+    </feature>
+</features>

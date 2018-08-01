@@ -1,0 +1,9 @@
+{
+  "name": "pentaho/config/deploy",
+  "version": "9.0.0.0-SNAPSHOT",
+  "config": {
+    "pentaho/modules": {
+      "pentaho/config/deploy_9.0.0.0-SNAPSHOT/config": {"type": "pentaho/config/spec/IRuleSet"}
+    }
+  }
+}

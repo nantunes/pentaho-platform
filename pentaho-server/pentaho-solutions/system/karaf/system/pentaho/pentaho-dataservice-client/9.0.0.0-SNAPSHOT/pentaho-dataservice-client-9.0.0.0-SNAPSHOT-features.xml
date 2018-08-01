@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.1" name="pentaho-dataservice-client-repo">
+    <feature name="pentaho-dataservice-client" version="9.0.0.0-SNAPSHOT" description="Pentaho Community Edition Project: pentaho-dataservice-client">
+        <details>Pentaho Data Services Client</details>
+        <feature>pentaho-base</feature>
+        <bundle>mvn:pentaho/pdi-dataservice-client-plugin/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:pentaho/pdi-dataservice-client-plugin-api/9.0.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:commons-collections/commons-collections/3.2.2</bundle>
+    </feature>
+</features>

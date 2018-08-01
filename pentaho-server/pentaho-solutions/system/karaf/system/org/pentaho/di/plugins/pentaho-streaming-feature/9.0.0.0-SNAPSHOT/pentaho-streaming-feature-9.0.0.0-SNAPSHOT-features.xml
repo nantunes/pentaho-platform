@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.1" name="pentaho-streaming-feature">
+    <feature name="pentaho-streaming-feature" version="9.0.0.0-SNAPSHOT" description="Pentaho Streaming Plugin Feature">
+        <details>Container pom for Pentaho Data Integration modules</details>
+        <bundle start-level="80">mvn:org.pentaho.di.plugins/pentaho-streaming-jms-plugin/9.0.0.0-SNAPSHOT</bundle>
+        <bundle start-level="80">mvn:com.google.guava/guava/19.0</bundle>
+        <bundle start-level="80">mvn:org.apache.activemq/artemis-jms-client-osgi/2.5.0</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-handler/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:commons-beanutils/commons-beanutils/1.9.3</bundle>
+        <bundle start-level="80">mvn:org.jgroups/jgroups/3.6.13.Final</bundle>
+        <bundle start-level="80">mvn:org.apache.johnzon/johnzon-core/0.9.5</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-codec-http/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-codec/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:org.jboss.logging/jboss-logging/3.3.1.Final</bundle>
+        <bundle start-level="80">mvn:org.glassfish/javax.json/1.0.4</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-transport-native-kqueue/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-common/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-buffer/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-transport-native-unix-common/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-transport/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-resolver/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.netty/netty-transport-native-epoll/4.1.22.Final</bundle>
+        <bundle start-level="80">mvn:io.reactivex.rxjava2/rxjava/2.0.4</bundle>
+        <bundle start-level="80">mvn:javax.jms/javax.jms-api/2.0.1</bundle>
+        <bundle start-level="80">mvn:org.pentaho.di.plugins/pentaho-streaming-mqtt-plugin/9.0.0.0-SNAPSHOT</bundle>
+        <bundle start-level="80">mvn:org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.2.0</bundle>
+    </feature>
+</features>
