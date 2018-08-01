@@ -1,1 +1,0 @@
-orb(1305,1,P6d);_.ac=function GOc(){Rtd((Ptd(),Ptd(),Otd))};m7d(Bk)(1);
