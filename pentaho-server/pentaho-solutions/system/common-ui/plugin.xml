@@ -39,7 +39,7 @@
 
   <webservice
       id="metadataService"
-      type="xml,gwt"
+      type="xml"
       class="org.pentaho.common.ui.metadata.service.MetadataService"/>
 
   <!-- Commented out per PPP-3679

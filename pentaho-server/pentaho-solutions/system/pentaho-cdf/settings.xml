@@ -14,7 +14,7 @@
 
         valid values are: true | false
      -->
-    <hibernate-available>true</hibernate-available>
+    <hibernate-available>false</hibernate-available>
     
     
     <!--
