@@ -118,7 +118,7 @@ public class FileResource extends AbstractJaxRSResource {
 
   protected FileService fileService;
 
-  protected SchedulerResource schedulerResource;
+//  protected SchedulerResource schedulerResource;
 
   protected RepositoryDownloadWhitelist whitelist;
 
@@ -135,7 +135,7 @@ public class FileResource extends AbstractJaxRSResource {
 
   public FileResource() {
     fileService = new FileService();
-    schedulerResource = new SchedulerResource();
+//    schedulerResource = new SchedulerResource();
   }
 
   public FileResource( HttpServletResponse httpServletResponse ) {
@@ -2057,7 +2057,7 @@ public class FileResource extends AbstractJaxRSResource {
   @StatusCodes( {
     @ResponseCode( code = 200, condition = "Successfully got the generated content for schedule" ) } )
   public List<RepositoryFileDto> doGetGeneratedContentForSchedule( @QueryParam( "lineageId" ) String lineageId ) {
-    return schedulerResource.doGetGeneratedContentForSchedule( lineageId );
+    return null;//schedulerResource.doGetGeneratedContentForSchedule( lineageId );
   }
 
   /**

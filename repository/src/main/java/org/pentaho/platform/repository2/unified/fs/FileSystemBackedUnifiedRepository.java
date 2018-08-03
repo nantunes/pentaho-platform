@@ -229,7 +229,7 @@ public class FileSystemBackedUnifiedRepository implements IUnifiedRepository {
   }
 
   public boolean hasAccess( String path, EnumSet<RepositoryFilePermission> permissions ) {
-    throw new UnsupportedOperationException();
+    return true;
   }
 
   public void lockFile( Serializable fileId, String message ) {
